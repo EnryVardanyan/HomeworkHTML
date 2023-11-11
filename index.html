@@ -8,18 +8,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="img/squad.jpg" alt="AC Milan squad">
+    <img src="img/squad.jpg" alt="AC Milan squad" class="acmPhoto">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="milan" id="favPlayer">Who was a top scorer in Champions League 2006/07</label>
-    <select name="milan" id="milan">
-        <option value="default"></option>
-        <option value="Ibrahimovic">Inzaghi</option>
-        <option value="Pato">Gilardino</option>
-        <option value="Kaka">Kaka</option>
-        <option value="Pirlo">Pirlo</option>
-        <option value="Maldini">Maldini</option>
-    </select>
+    <div id="favPlayer">
+        <label for="milan">Who was a top scorer in Champions League 2006/07</label>
+        <select name="milan" id="milan">
+            <option value="default"></option>
+            <option value="Ibrahimovic">Inzaghi</option>
+            <option value="Pato">Gilardino</option>
+            <option value="Kaka">Kaka</option>
+            <option value="Pirlo">Pirlo</option>
+            <option value="Maldini">Maldini</option>
+        </select></div>
     <div class="playersDesc">
         <div>
             <img src="img/Pato.webp" alt="Pato">
@@ -45,19 +47,28 @@
             <img src="img/Pirlo.webp" alt="Pirlo">
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <form action="action.php" method="post" id="form">
-            <label for="firstName">Player's First Name</label>
-            <input type="text" placeholder="First name" id="firstName">
-            <label for="secondName">Player's Second Name</label>
-            <input type="text" placeholder="Second name" id="secondName">
-            <label for="name">Your Name</label>
-            <input type="text" placeholder="Your Name" id="name">
-            <label for="pass">Password</label>
-            <input type="password" placeholder="password" id="pass">
-            <label for="message">Message</label>
-            <input type="textarea" placeholder="message" id="message">
-        </form>
     </div>
+        <div class="form">
+            <form action="action.php" method="post" id="form">
+                <div>
+                    <label for="firstName">Player's First Name</label>
+                    <input type="text" placeholder="First name" id="firstName">
+                    <label for="secondName">Player's Second Name</label>
+                    <input type="text" placeholder="Second name" id="secondName">
+                </div>
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Your Name" id="name">
+                    <label for="pass">Password</label>
+                    <input type="password" placeholder="password" id="pass">
+                </div>
+                <div id="message">
+                    <label for="message">Message</label>
+                    <input type="textarea" placeholder="message" id="message">
+                </div>
+            </form>
+        </div>
+    
     <footer>
         <img src="img/logo.png" alt="AC Milan logo" class="acmLogo">
         <ol class="mainPlayers">

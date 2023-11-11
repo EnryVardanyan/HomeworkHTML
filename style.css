@@ -1,0 +1,71 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(179, 17, 49);
+}
+.contactBtn{
+    height: 25px;
+    width: 75px;
+    border-radius: 50%;
+    color: aliceblue;
+    background-color: black;
+}
+.acm{
+    font-size: 50px;
+}
+.acmPhoto{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+#favPlayer{
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+#milan{
+    border-radius: 30%;
+    width: 100px;
+    background-color: black;
+    color: rgb(179, 17, 49);
+}
+body{
+    background-color: rgb(179, 17, 49);
+}
+.playersDesc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.playersDesc div{
+    border: 2px solid black;
+    margin: 20px;
+}
+.form form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.form form div input{
+    width: 200px;
+    height: 30px;
+}
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#message input{
+    height: 200px;
+    min-width: 500px;
+}
